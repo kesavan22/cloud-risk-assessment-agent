@@ -119,5 +119,6 @@ class TestImageScan(unittest.TestCase):
         with self.assertRaises(ValueError):
             container_footprint(self.sample_report, output_format="invalid")
 
+
 if __name__ == "__main__":
     unittest.main()

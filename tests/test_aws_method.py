@@ -197,6 +197,5 @@ class TestProcessAwsScan(unittest.TestCase):
         self.assertEqual(len(df), 2)
         self.assertSetEqual(set(df["id"]), {"AWS004", "AWS005"})
 
-
 if __name__ == "__main__":
     unittest.main()
