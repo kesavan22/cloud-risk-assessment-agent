@@ -206,6 +206,5 @@ class TestProcessK8sScan(unittest.TestCase):
         self.assertEqual(len(df), 1)
         self.assertTrue("cause_metadata" in df.columns)
 
-
 if __name__ == "__main__":
     unittest.main()
