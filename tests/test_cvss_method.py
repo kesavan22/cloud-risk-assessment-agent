@@ -56,5 +56,6 @@ class TestCVSSScore(unittest.TestCase):
         score = safe_cvss_score(None)
         self.assertIsNone(score)
 
+
 if __name__ == '__main__':
     unittest.main()
