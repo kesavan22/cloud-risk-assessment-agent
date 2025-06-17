@@ -6,6 +6,7 @@ from src.scan.kubernetes import process_k8s_scan
 
 class TestProcessK8sScan(unittest.TestCase):
 
+
     def setUp(self):
         self.base_report = {
             "Resources": [

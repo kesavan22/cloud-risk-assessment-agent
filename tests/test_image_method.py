@@ -89,6 +89,7 @@ class TestImageScan(unittest.TestCase):
         self.assertIsInstance(summary, str)
         self.assertIn("ArtifactName: sample_image:latest", summary)
 
+
     @patch("builtins.open", new_callable=mock_open)
     def test_get_image_cve_table(self, mock_file):
         mock_file.return_value.read.return_value = json.dumps(self.sample_report)
