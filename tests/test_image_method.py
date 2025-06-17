@@ -13,6 +13,7 @@ from src.scan.image import (
     container_footprint,
 )
 
+
 class TestImageScan(unittest.TestCase):
     def setUp(self):
         self.sample_report = {
