@@ -22,4 +22,6 @@ COPY .chainlit /agent/.chainlit
 
 ENV TIKTOKEN_CACHE_DIR=/agent/cache
 
+RUN sed -i 's/\r$//' /agent/scripts/entrypoint.sh && chmod +x /agent/scripts/entrypoint.sh
+
 CMD ["/agent/scripts/entrypoint.sh"]
