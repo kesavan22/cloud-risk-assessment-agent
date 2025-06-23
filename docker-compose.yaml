@@ -5,5 +5,5 @@ services:
     ports:
       - "80:8000"
     volumes:
-      - "/tmp/tmcybertron/:/tmp/tmcybertron/"
+      - "./tmp/tmcybertron/:/tmp/tmcybertron/"
       - "./sqlite/:/sqlite/"
